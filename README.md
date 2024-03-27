@@ -1,46 +1,37 @@
-# Getting Started with Create React App
+# Tag Browser
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tag Browser is a simple web application allowing users to browse popular tags from the Stack Overflow website. The project utilizes the React framework and the Material-UI library for the user interface.
 
-## Available Scripts
+## Components
 
-In the project directory, you can run:
+The project consists of three main components:
 
-### `npm start`
+### 1. TagBrowser
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`TagBrowser` is the main component of the application. It is responsible for managing tag data and rendering the user interface, including the tag table and pagination.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 2. TagTable
 
-### `npm test`
+`TagTable` is responsible for rendering the table with tag data. It accepts a list of tags and information about the current page and the number of rows per page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Pagination
 
-### `npm run build`
+`Pagination` is a component responsible for rendering pagination, allowing navigation through the results. It accepts information about the current page, the total number of tags, and functions to change the page and the number of rows per page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the Project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run the project, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Make sure you have Node.js installed on your computer.
+2. Clone the repository to your local computer.
+3. Navigate to the project's main directory in the terminal.
+4. Run the command `npm install` to install all dependencies.
+5. After the installation is complete, start the project by running `npm start`.
+6. The project should launch in your browser at the default address `http://localhost:3000`.
 
-### `npm run eject`
+## Running Storybook
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Additionally, you can run Storybook to view and test components independently of the application. To do so, follow these steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. After installing dependencies (`npm install`), run the command `npm run storybook`.
+2. Storybook will start and be accessible at `http://localhost:6006/`.
