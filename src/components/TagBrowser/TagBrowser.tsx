@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Box, Typography, CircularProgress } from "@mui/material";
 import { Tag } from "../../types/types";
-import TagTable from "./TagTable";
-import Pagination from "./Pagination";
+import TagTable from "../TagTable/TagTable";
+import Pagination from "../Pagination/Pagination";
 
 interface TagsData {
   tags: Tag[];
